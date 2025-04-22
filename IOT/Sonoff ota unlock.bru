@@ -1,0 +1,17 @@
+meta {
+  name: Sonoff ota unlock
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://192.168.100.88:8081/zeroconf/ota_unlock
+  body: json
+  auth: inherit
+}
+
+body:json {
+  { 
+    "data": {}
+  }
+}

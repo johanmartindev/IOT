@@ -1,0 +1,17 @@
+meta {
+  name: Sonoff Info
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://192.168.100.88:8081/zeroconf/info
+  body: json
+  auth: inherit
+}
+
+body:json {
+  { 
+    "data": {}
+  }
+}
